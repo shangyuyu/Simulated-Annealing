@@ -1,4 +1,6 @@
-### Simulated Annealing
+<link href="style.css" rel="stylesheet"></link>
+
+### Simulated Annealing for Traveling Salesman Problem
 
 ***
 #### How to run
@@ -7,12 +9,14 @@
 
 ***
 #### Sample output
-![](sampleOutput1.jpg)
-![](sampleOutput2.jpg)
+![sample](sampleOutput1.jpg)
+![sample](sampleOutput2.jpg)
 
 ***
 
 This is a draft of simulated annealing.  
 A lot of optimizations can be implemented (actually a part of the main program is still left blank).  
-I wasn't expecting this incomplete program to work but ...  
-Since it already outputs correct answer, I want to make my life easier.
+I was just trying to run the program to see if there is a bug so far...  
+and it works...? 
+
+Ref: https://www.fourmilab.ch/documents/travelling/anneal/
