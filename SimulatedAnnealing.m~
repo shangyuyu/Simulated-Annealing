@@ -1,8 +1,7 @@
 % simulated annealing
 
-maxIteration = 60000;
-numCandPerIteration = 50;
-decTempCount = 3000;
+maxIteration = 80000;
+numCandPerIteration = 40;
 alpha = 1;  % 1 / temperature
 
 % annealing
@@ -17,9 +16,9 @@ for i = 1:maxIteration
    
     cost_ = calcCost(visitOrder);
     
-    if (decCount == decTempCount)
+    if (decCount == 3000)
     
-        alpha = alpha + 10;
+        alpha = alpha + 8;
         decCount = 0;
     end
     flag = false;  % whether find a better order
@@ -48,10 +47,7 @@ for i = 1:maxIteration
             record(j, 4) = expCost;  % Record expCost
         else  % Transport
 
-            % It is suggested to add another way to change the 
-            % order (except swap), which will accelerate converge
-            % But since it has been working now, I dont want bother
-            % optimize this...
+            % It is suggested to implement
         end
     end
     
